@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Unassigned Issues",
+  "description": "Filter the issue list to only include issues that are not assigned to anyone",
+  "version": "1.0",
+
+  "permissions": [
+    "*://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/issues/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "128": ""
+  }
+}
